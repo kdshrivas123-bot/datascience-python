@@ -1153,41 +1153,53 @@
 # print(var)
 
 
-var=2
-def mult_by_var(x):
-    return x *var
-print(mult_by_var(7))
+# var=2
+# def mult_by_var(x):
+#     return x *var
+# print(mult_by_var(7))
 
-def mult(x):
-    var =5 # shadawing var in local scope
-    return x *var
-print(mult(7))
+# def mult(x):
+#     var =5 # shadawing var in local scope
+#     return x *var
+# print(mult(7))
 
-def  my_func():
-    global var
-    var=3
-    print("do i know that variable ",var)
-var =1
-my_func()
-print(var)
+# def  my_func():
+#     global var
+#     var=3
+#     print("do i know that variable ",var)
+# var =1
+# my_func()
+# print(var)
 
-def return_var():
-    global var
-    var=5
-    return var
-print(return_var())
-print(var)
+# def return_var():
+#     global var
+#     var=5
+#     return var
+# print(return_var())
+# print(var)
 
-def my_function(n):
-    print("i got ",n)
-    n +=1
-    print("i have ",n)
-    print(var)
+# def my_function(n):
+#     print("i got ",n)
+#     n +=1
+#     print("i have ",n)
+#     print(var)
+
+# def my_func(my_list_1):
+#     print("print #1:",my_list_1)# local
+#     print("print # 2:",my_list_2)
+#     my_list_1=[0,1]
+#     print("print #3",my_list_1)
+#     print("print #3",my_list_2)
+# my_list_2=[2,3]
+# my_func(my_list_2)
+# print("print #5:",my_list_2)
 
 def my_func(my_list_1):
     print("print #1:",my_list_1)# local
     print("print # 2:",my_list_2)
-    my_list_1=[0,1]
+    del my_list_1[0]
+    my_list_1.append(4)
+    # my_list_1=[0,1]
     print("print #3",my_list_1)
     print("print #3",my_list_2)
 my_list_2=[2,3]
