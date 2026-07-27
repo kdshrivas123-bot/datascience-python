@@ -837,7 +837,7 @@
 # print(len(lst))
 # print(lst)
 
-list=[1,2,3,4,5,6,7,8,9,10]
+# list=[1,2,3,4,5,6,7,8,9,10]
 # for i in list:
 #     if i%2!=0:
 #         print(i)
@@ -936,33 +936,230 @@ list=[1,2,3,4,5,6,7,8,9,10]
 # odds=[x for x in squres if x % 2!=0]
 # print(odds)
 
-# bord=[]
+# board=[]
 # for  i in range(8):
 #     row=["empty" for i in range(8)]
-#     bord.append(row)
-# print(bord)
+#     board.append(row)
+# print(board)
 
-print("checkig branch changes!")
+# board[0][0] ="ROOKS"
+# board[0][7] ="ROOKS"
+# board[7][0] ="ROOKS"
+# board[7][0] ="ROOKS"
 
+# board[0][0] ="KNIGHT"
+# board[0][6] ="KNIGHT"
+# board[7][1] ="KNIGHT"
+# board[7][6] ="KNIGHT"
 
-
-
-
-
-
-
-
-
-
-
-
+# for index in range(len(board)):
+#     print(board[index])
 
 
+# print("checkig branch changes!")
+# print("checkout branch changes!")
 
 
+# temps=[[0.0 for h in range (24)] for d in range(31)]
+# for index in range(len(temps)):
+#     print(temps[index])
 
 
+# temps=[[0.0 for h in range (24)] for d in range(31)]
+
+# random=[20,34,44,12,34,20,34,44,12,34,44,12,34,20,34,44,12,34,44,12,34,44,12,34,20,34,44,12, 34,44,12]
+# print(len(random))
+
+# for index in range (len(temps)):
+#     temps[index][11]= random[index]
+
+# for index in range (len(temps)):
+#     print(temps[index])
+# #calculate the avrang tempm of the month 
+
+# sum =0
+# for index in range (len(temps)):
+#     sum+=temps[index][11]
+# print(sum/32)
+# highest =0 
+# for index in range (len(temps)):
+#     for inner_index in range (len(temps[index])):
+#         if highest<temps[index][inner_index]:
+#             highest=temps[index][inner_index]
+# print(highest)
+
+# lowest=0
+# for index in range (len(temps)):
+#     for inner_index in range  (len(temps[index])):
+#         if highest>temps[index][inner_index]: 
+#                 highest=temps[index][inner_index]
+# print(lowest)
+
+# rooms = [[[False for r in range (20)]for f in range (15)]for t in range (3)]
+# for building_index in range (len(rooms)):
+#     print("building",building_index +1)
+#     for floor_index in range (len(rooms[building_index])):
+#         print("floor", floor_index+1)
+#         print(rooms[building_index][floor_index])
+
+# def message():
+#     print("Enter a value:")
+#     a=int(input())
+#     print(a)
+# message()
+# message()
+# message()
+
+# def message ():
+#     print("Enter Next value: " )
+# print("we start from here.")
+# message()
+# print("the end is here.")
 
 
+# def message():
+#     print("enter you value:")
+#     return
+#     a=int(input())
+   
+# a=message()
+# print(message())
+# message()
+# def hi():
+#     print("hi")
+# hi(5)
 
+# def hallo(n):#defining a function 
+#     print("hallo,",n) #body of the function 
+# name=input("enter you number :")
+# hallo(name)# calling the function 
+
+# def message(num):
+#     print("number:",number)
+#     print("num:",num)
+# number=1234
+# message(1)
+# print(number)
+
+# def message(what,number):
+#     print("enter",what,"number",number)
+# message("telephone",11)
+# message("price",5)
+# message("number","number")
+
+# def print_grade(name,marks):
+#     grade=""
+#     if marks<50:
+#         grade="d"
+#     if marks<60:
+#         grade="c"
+#     if marks<75:
+#         grade= "b"
+#     if marks<90:
+#         grade= "a"  
+
+#     if marks>90:
+#         grade = "a+"
+#     print(f'Hello {name},you grade from {marks}is {grade}!')
+# print_grade("koushal",33)
+# print_grade("harsh",80)
+# print_grade("harshista",70)
+# print_grade("lovkush",60)
+# print_grade("shivani",95)
+# print_grade("khushi",55)
+# # print_grade(66,"kiran")
+
+
+# def introduction(first_name,last_name="NA"):
+#     print("Helllo, my name is",first_name,last_name)
+# introduction(first_name="james",last_name="bond")
+# introduction(last_name="bond",first_name="james")
+# introduction("bond","james")
+# introduction("koushlenda ")
+# introduction("koushal","shrivas")
+
+# # def adding(a,b,c):
+# #     print(a, "+",b,"+",c,"=", a+b+c)
+# # adding(1,2,3)
+# # adding(c=1,a=2,b=3)
+
+# # # adding(3,c=1,b=2,b=3)
+# # # adding(3,a=1,b=2)
+
+# def happy_new_year(wishes=True):
+#     print("thre....")
+#     print("two...")
+#     print("one....")
+#     if not wishes:
+#         return
+#     print("happy new year!")
+# happy_new_year()
+
+
+# def happy_new_year(wishes=True):
+#     print("thre....")
+#     print("two...")
+#     print("one....")
+#     if not wishes:
+#         return
+#     print("happy new year!")
+# happy_new_year(False)
+
+# def boring_function():
+#     return 123
+# x= boring_function()
+# print("the boring_function has returend its result. it's :",x)
+
+# value=None
+# if value is None:
+#     print("sorry, you don't carry any value")
+# value=input("Enter None:")
+# if value=="":
+#     value=None
+# print(value)
+# print(type(value))
+
+# def strange_function(n):
+#     if(n % 2==0):
+#         return True
+# print(strange_function(2))
+# print(strange_function(1))
+
+# def list_sum(lst):
+#     s=0
+#     for elem in lst:
+#         s+= elem
+#     return s
+# print(list_sum([7,7,7]))
+# def strange_list_fun(n):
+#     strange_list=[]
+#     for i in range(0,n):
+#         strange_list.insert(0,i)
+
+#     return strange_list
+# print(strange_list_fun(5))
+
+# def scope_test():
+#     x=333
+# scope_test()
+# # print(x)
+
+# var=2
+# def my_function():
+    
+#     print("Do I Know the variable",var)
+
+# my_function()
+# print(var)
+
+
+var=2
+def mult_by_var(x):
+    return x *var
+print(mult_by_var(7))
+
+def mult(x):
+    var =5. # shadawing var in local scope
+    return x *var
+print(mult(7))
 
