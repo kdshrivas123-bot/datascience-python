@@ -1206,28 +1206,62 @@
 # my_func(my_list_2)
 # print("print #5:",my_list_2)
 
-tuple_1=(1,2,3,4,True)
-tuple_2=(1.,.5,.25)
-print("tuple_1:",type(tuple_1))
-print("tuple_2:",tuple_2)
-print("tuple_2:",type(tuple_2))
+# tuple_1=(1,2,3,4,True)
+# tuple_2=(1.,.5,.25)
+# print("tuple_1:",type(tuple_1))
+# print("tuple_2:",tuple_2)
+# print("tuple_2:",type(tuple_2))
 
-empty_tup=()
-print("empty_tup:",empty_tup)
-print("type of empty_tup",type(empty_tup))
-one_element_tuple_1=(1,)
-print("one_element_tuple_1:",one_element_tuple_1)
-print("one_element_tuple_1",type(one_element_tuple_1))
-one_element_tuple_2=2
-print("one_element_tuple_2:",one_element_tuple_2)
-print("one_element_tuple_2",type(one_element_tuple_2))
+# empty_tup=()
+# print("empty_tup:",empty_tup)
+# print("type of empty_tup",type(empty_tup))
+# one_element_tuple_1=(1,)
+# print("one_element_tuple_1:",one_element_tuple_1)
+# print("one_element_tuple_1",type(one_element_tuple_1))
+# one_element_tuple_2=2
+# print("one_element_tuple_2:",one_element_tuple_2)
+# print("one_element_tuple_2",type(one_element_tuple_2))
 
-my_tuple=(1,10,100,1000)
-my_tuple.append(100000)
-del my_tuple[0]
-my_tuple[1]=-1
+# my_tuple=(1,10,100,1000)
+# my_tuple.append(100000)
+# del my_tuple[0]
+# my_tuple[1]=-1
 
-my_tuple=(1,10,100,1000)
-tuple_2=(1.,.5,.25)
-new_tuple=my_tuple+tuple_2
-print(new_tuple)
+# my_tuple=(1,10,100,1000)
+# tuple_2=(1.,.5,.25)
+# new_tuple=my_tuple+tuple_2
+# print(new_tuple)
+
+
+tuple=(1,20,200)
+t1=tuple+(1000,10000)
+t2=tuple*3
+print(len(t2))
+print(t1)
+print(t2)
+print(10 in tuple)
+print(-10 not in tuple)
+
+
+#example 2
+
+tuple_1=(1,2,3)
+for elem in tuple_1:
+    print(elem)
+
+print("------")
+
+tuple_2=(1,2,3,4)
+print(5 in tuple_2)
+print(5 not in tuple_2)
+
+tuple_3=(1,2,3,4)
+print(len(tuple_3))
+print(5 not in tuple_3)
+
+tuple_4=tuple_1+tuple_2
+tuple_5=tuple_3*2
+print(tuple_4)
+print(tuple_5)
+print(tuple_5[0])
+print(tuple_5[1])
