@@ -1194,14 +1194,40 @@
 # my_func(my_list_2)
 # print("print #5:",my_list_2)
 
-def my_func(my_list_1):
-    print("print #1:",my_list_1)# local
-    print("print # 2:",my_list_2)
-    del my_list_1[0]
-    my_list_1.append(4)
-    # my_list_1=[0,1]
-    print("print #3",my_list_1)
-    print("print #3",my_list_2)
-my_list_2=[2,3]
-my_func(my_list_2)
-print("print #5:",my_list_2)
+# def my_func(my_list_1):
+#     print("print #1:",my_list_1)# local
+#     print("print # 2:",my_list_2)
+#     del my_list_1[0]
+#     my_list_1.append(4)
+#     # my_list_1=[0,1]
+#     print("print #3",my_list_1)
+#     print("print #3",my_list_2)
+# my_list_2=[2,3]
+# my_func(my_list_2)
+# print("print #5:",my_list_2)
+
+tuple_1=(1,2,3,4,True)
+tuple_2=(1.,.5,.25)
+print("tuple_1:",type(tuple_1))
+print("tuple_2:",tuple_2)
+print("tuple_2:",type(tuple_2))
+
+empty_tup=()
+print("empty_tup:",empty_tup)
+print("type of empty_tup",type(empty_tup))
+one_element_tuple_1=(1,)
+print("one_element_tuple_1:",one_element_tuple_1)
+print("one_element_tuple_1",type(one_element_tuple_1))
+one_element_tuple_2=2
+print("one_element_tuple_2:",one_element_tuple_2)
+print("one_element_tuple_2",type(one_element_tuple_2))
+
+my_tuple=(1,10,100,1000)
+my_tuple.append(100000)
+del my_tuple[0]
+my_tuple[1]=-1
+
+my_tuple=(1,10,100,1000)
+tuple_2=(1.,.5,.25)
+new_tuple=my_tuple+tuple_2
+print(new_tuple)
