@@ -1233,35 +1233,84 @@
 # print(new_tuple)
 
 
-tuple=(1,20,200)
-t1=tuple+(1000,10000)
-t2=tuple*3
-print(len(t2))
-print(t1)
-print(t2)
-print(10 in tuple)
-print(-10 not in tuple)
+# tuple=(1,20,200)
+# t1=tuple+(1000,10000)
+# t2=tuple*3
+# print(len(t2))
+# print(t1)
+# print(t2)
+# print(10 in tuple)
+# print(-10 not in tuple)
 
 
-#example 2
+# #example 2
 
-tuple_1=(1,2,3)
-for elem in tuple_1:
-    print(elem)
+# tuple_1=(1,2,3)
+# for elem in tuple_1:
+#     print(elem)
 
-print("------")
+# print("------")
 
-tuple_2=(1,2,3,4)
-print(5 in tuple_2)
-print(5 not in tuple_2)
+# tuple_2=(1,2,3,4)
+# print(5 in tuple_2)
+# print(5 not in tuple_2)
 
-tuple_3=(1,2,3,4)
-print(len(tuple_3))
-print(5 not in tuple_3)
+# tuple_3=(1,2,3,4)
+# print(len(tuple_3))
+# print(5 not in tuple_3)
 
-tuple_4=tuple_1+tuple_2
-tuple_5=tuple_3*2
-print(tuple_4)
-print(tuple_5)
-print(tuple_5[0])
-print(tuple_5[1])
+# tuple_4=tuple_1+tuple_2
+# tuple_5=tuple_3*2
+# print(tuple_4)
+# print(tuple_5)
+# print(tuple_5[0])
+# print(tuple_5[1])
+
+# my_tuple= tuple((1,2 ,"string"))
+# print(my_tuple)
+
+# my_list=[1,4,6]
+# print(my_list)
+# print(type(my_list))
+# tup=my_tuple(my_list)
+# print(tup)
+# print(type(tup))
+
+var=123
+t1=(1,)
+t2=(2,)
+t3=(3,var)
+t1,t2,t3=t2,t3,t1
+print(t1,t2,t3)
+
+#dictionary
+
+dictionary={
+    "cat":"chat:"
+    ,"dog":"chain:",
+    "hourse":"cheval:"
+
+}
+phone_number={
+    'boss':983479898236,
+    'suzy':729798437598
+}
+empty_disctonary={}
+print("dict:",dictionary)
+print("type(dist):",type(dictionary))
+print("phone_number:",phone_number)
+print("type(phone_numbrer)",type(phone_number))
+print("empty_dictionary:",empty_disctonary)
+print("type(empty_dictionary)",type(empty_disctonary))
+
+print(dictionary["cat"])
+print(dictionary["hourse"])
+
+cat="carkey"
+dog="dogkey"
+my_dictionary={
+    cat:"carkey",
+    dog:"dogkey"
+}
+print(my_dictionary)
+print(my_dictionary[cat])
